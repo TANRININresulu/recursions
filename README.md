@@ -11,7 +11,7 @@ The concept of recursion in computer science is a method where the solution to a
 # Understanding JavaScript Recursion
 
 In JavaScript, a recursive function is a function that calls itself until it doesn’t. Let’s illustrate this with a basic example of calculating a factorial of a number:
-```
+```js
 function factorial(n) {
   // Base case: if n is 0 or 1, return 1
   if (n === 0 || n === 1) {
@@ -32,7 +32,7 @@ In the above example, the function factorial calls itself to compute the factori
 Tail Call Optimization (TCO) is a concept where the compiler converts a recursive call into an iterative loop, reducing the memory overhead. However, as of the date of this post, TCO is only supported in strict mode in ECMAScript 6 (ES6) and only in some JavaScript engines like Safari’s JavaScriptCore.
 
 A function call is said to be in the tail position if it’s the final action of a function. In simpler terms, a tail call is when a function is called as the last operation in another function. Here’s how we can refactor the previous factorial function to make it tail-recursive:
-```
+```js
 function factorial(n, acc = 1) {
   // Base case: if n is 0 or 1, return the accumulator
   if (n === 0 || n === 1) {
