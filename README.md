@@ -50,6 +50,6 @@ Here, we introduced an accumulator (acc) to hold the result of the calculation a
 
 Motivational Quote
 
-“The function of good software is to make the complex appear to be simple.” — Grady Booch
+> “The function of good software is to make the complex appear to be simple.” — Grady Booch
 
 Remember, recursion is a powerful tool in your programming arsenal, but like any tool, it must be used wisely. Understanding how JavaScript handles recursion and tail calls is crucial in writing efficient, performant code
